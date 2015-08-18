@@ -5184,3 +5184,2007 @@ Processing by AutosController#index as HTML
   [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
   Rendered autos/index.html.erb within layouts/application (0.8ms)
 Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:44:33 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 75ms (Views: 74.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:49:23 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f9cbde655f8>:0x007f9cbde64b08>):
+    1: <%= form_for (@auto) do |a| %>
+    2: 
+    3: <div class="field">
+    4: 	<%= f.text_field :marca, placeholder: "Marca" %>
+    5: </div>
+    6: <div class="field">
+    7: 	<%= f.text_field :modelo, placeholder: "Modelo" %>
+  app/views/autos/new.html.erb:4:in `block in _app_views_autos_new_html_erb___3017328957442858510_70155588803140'
+  app/views/autos/new.html.erb:1:in `_app_views_autos_new_html_erb___3017328957442858510_70155588803140'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (19.7ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:49:53 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 90ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:49:54 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 45ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:18 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:50:25 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:25 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:25 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:25 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:26 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:42 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 40ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:50:57 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:15 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:51:28 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:52:24 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:55:11 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/Nnodes/autos/app/views/autos/new.html.erb:14: syntax error, unexpected '<', expecting ')'
+</div>
+ ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/new.html.erb:14: unterminated regexp meets end of file):
+  app/views/autos/new.html.erb:14: syntax error, unexpected '<', expecting ')'
+  app/views/autos/new.html.erb:14: unterminated regexp meets end of file
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.5ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:21 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:55:52 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 02:56:02 -0400
+
+
+Started POST "/autos" for 127.0.0.1 at 2015-08-18 02:57:23 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for AutosController):
+  actionpack (4.2.3) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.3) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.3) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.3) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `call'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.3) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.3) lib/action_dispatch/routing/route_set.rb:821:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.3) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.3) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.3) lib/active_support/callbacks.rb:84:in `run_callbacks'
+  actionpack (4.2.3) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:04:04 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 40ms (Views: 36.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:06:31 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2015-08-18 03:06:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.6ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2015-08-18 03:06:36 -0400
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.3) lib/rails/engine.rb:518:in `call'
+  railties (4.2.3) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:06:52 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 03:06:54 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:06:55 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 03:06:58 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:06:59 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.1ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 33.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:07 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 77ms (Views: 75.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:14 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.7ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:34 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:07:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 104ms (Views: 102.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:52 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:52 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:08:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:17 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/estilos.self-5bf9340f5e055225beaafee6cfeab47ca1659fab403bacaea0c97c0eccd602f1.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:54 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.1ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:11:59 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:12:00 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:13:22 -0400
+Processing by AutosController#index as HTML
+  Rendered autos/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:3: syntax error, unexpected '='
+...os/new", html_options = {class="boton2"} );@output_buffer.sa...
+...                               ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:3: syntax error, unexpected '}', expecting ')'
+...html_options = {class="boton2"} );@output_buffer.safe_append...
+...                               ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting ')'
+'.freeze;	 @autos.each do |auto|   
+         	               ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/autos/index.html.erb:3: syntax error, unexpected '='
+  app/views/autos/index.html.erb:3: syntax error, unexpected '}', expecting ')'
+  app/views/autos/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting ')'
+  app/views/autos/index.html.erb:15: syntax error, unexpected keyword_end, expecting ')'
+  app/views/autos/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/autos/index.html.erb:19: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:13:46 -0400
+Processing by AutosController#index as HTML
+  Rendered autos/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:3: syntax error, unexpected '='
+...egar Auto", "autos/new", class="boton2" );@output_buffer.saf...
+...                               ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting keyword_end
+'.freeze;	 @autos.each do |auto|   
+         	               ^
+/home/felipe/Documentos/Nnodes/autos/app/views/autos/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/autos/index.html.erb:3: syntax error, unexpected '='
+  app/views/autos/index.html.erb:10: syntax error, unexpected keyword_do_block, expecting keyword_end
+  app/views/autos/index.html.erb:17: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:14:58 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 79ms (Views: 78.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/estilos.self-796d6048e8276398c79d10d6f82b1a5277f33fdbfe3fa4568ad833d4ee9e89c5.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:15:38 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.5ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/estilos.self-623229aaefb96536c77ba59ee0d67391db6454672e8d04733d545268cbc3c85f.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:23 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:16:30 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 97ms (Views: 95.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/estilos.self-641e0e39b1686c9f6b62b07c37174a4773a3d54f63021b911abb0cbf58b706f4.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 36.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/estilos.self-641e0e39b1686c9f6b62b07c37174a4773a3d54f63021b911abb0cbf58b706f4.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:16:52 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/estilos.self-b72f677e71ec1e2db000f2af728ff5e371ee5800b75685bf9c610b85bbbf3493.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:08 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:17:17 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 103ms (Views: 101.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/estilos.self-36e630e5548f29275692b57cf2b61b189eb3ea2945e9f27d97aeb6400d53a77a.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:18 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.1ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/estilos.self-9a255cb4fe5de5fd21168e35e185d1af18839d43faab4b23f468891185b1be59.css?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:17:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 108ms (Views: 106.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/estilos.self-a727c8e9cf189d48110d0e7ecc3ccc4180ba40cfb241f012b5398f0f32e2d7ff.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 105ms (Views: 103.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/estilos.self-8924194ec515422b5c2461e67b769544374fd405b2a255b6f7727069a7ecdf44.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:27 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 50.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/estilos.self-a727c8e9cf189d48110d0e7ecc3ccc4180ba40cfb241f012b5398f0f32e2d7ff.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:37 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/estilos.self-7f6141cf8254a4986197988fb81bfe91fa28d74f814a0502bf045d1639a7f45c.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:18:47 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 61ms (Views: 59.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/estilos.self-34336bd00abae249006d8817561ac3c2c70e4e8ddbe62b32c621cf049d34f4d9.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/estilos.self-7c8d20b3b9b9ba0d9f4971c96ea049aed12f19b694b79d277b6fdb09a56aba32.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:29 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:19:35 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 67ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/estilos.self-b9dc349882a7166523c9d5e5a9d39e2eb31f7b0b0f43c366152b5d10b61643e6.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:36 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:19:39 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 107ms (Views: 105.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:39 -0400
+
+
+Started GET "/assets/estilos.self-b96b2615df6e56d79ea6c81ca34a5e30557894eb8ccbf40b59b193de1d97dcea.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:39 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:39 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:19:40 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/estilos.self-d3a1686ccc74229266915573021af2584f029a00e6038ca35f226e4bba06e715.css?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:20:05 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 03:20:12 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 39.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/autos" for 127.0.0.1 at 2015-08-18 03:20:19 -0400
+Processing by AutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5dTelOfLpesw/5ZzkJ97D6eG2vYRmiebHCP0qrxaiST7CymuhTDYiCSlbml4O1ik4HnhTTwMQmxvS5Kq6HE6Ww==", "auto"=>{"marca"=>"Toyota", "modelo"=>"Yaris"}, "commit"=>"Agregar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "autos" ("marca", "modelo", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["marca", "Toyota"], ["modelo", "Yaris"], ["created_at", "2015-08-18 07:20:19.653454"], ["updated_at", "2015-08-18 07:20:19.653454"]]
+  [1m[36m (199.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/autos/2
+Completed 302 Found in 204ms (ActiveRecord: 200.1ms)
+
+
+Started GET "/autos/2" for 127.0.0.1 at 2015-08-18 03:20:19 -0400
+Processing by AutosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuto Load (0.2ms)[0m  SELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered autos/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:20:22 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:20:43 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 75.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/partes/index" for 127.0.0.1 at 2015-08-18 03:21:12 -0400
+Processing by PartesController#index as HTML
+  Rendered partes/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/partes/index" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+Processing by PartesController#index as HTML
+  Rendered partes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+
+
+Started GET "/assets/estilos.self-d3a1686ccc74229266915573021af2584f029a00e6038ca35f226e4bba06e715.css?body=1" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 03:21:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 03:21:20 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:21:21 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/partes/index" for 127.0.0.1 at 2015-08-18 03:21:23 -0400
+Processing by PartesController#index as HTML
+  Rendered partes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:21:24 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/autos/2" for 127.0.0.1 at 2015-08-18 03:22:06 -0400
+Processing by AutosController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered autos/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:33:05 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.3ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 03:33:07 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:34:04 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 36.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 03:34:05 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 77ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 03:34:13 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.2ms | ActiveRecord: 0.4ms)

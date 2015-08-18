@@ -1,0 +1,15 @@
+<h2> Agregar nuevo auto </h2>
+
+<%= form_for (@auto) do |auto| %>
+<div>
+ Marca:	<%= auto.text_field :marca, placeholder: "Escriba la marca", required: "required" %>
+</div>
+<br>
+<div>
+ Modelo: <%= auto.text_field :modelo, placeholder: "Escriba el modelo", required: "required" %>
+</div>
+<br>
+<div>
+<%= auto.submit "Agregar" %>
+</div>
+<%end%>

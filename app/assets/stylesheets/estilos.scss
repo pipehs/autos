@@ -7,7 +7,7 @@ html,body {
 a,a:visited {
 	color: #FFFFFF;
 	border: 2px #5882FA solid;
-	padding: 15px 50px 15px 50px;
+	padding: 10px 30px 10px 30px;
 	background-color: #5882FA;
 	font-size: 15px;
 	font-weight: bold;
@@ -101,3 +101,11 @@ a:hover {
 	text-align: center;
     margin: auto;
 }
+
+.boton{ /* Boton de agregar auto */
+    font-size:11px; 
+    font-weight:bold; 
+    width: repeat-x; 
+    height:20px;
+    /*box-shadow: 0px 0px 50px 0px #000000; Sombra de botones */
+} 
