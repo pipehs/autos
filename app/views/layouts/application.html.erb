@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Autos</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+		<nav class="fondo blanco large-padding">
+			<ul class="no-list row center-xs middle-xs">
+				<li class="col-md">
+					<%= link_to "Autos", root_path %>
+				</li>
+				<li class="col-md">
+					<%= link_to "Partes", "/partes/index" %>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<%= yield %>
+
+</body>
+</html>

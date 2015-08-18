@@ -1,0 +1,103 @@
+html,body {
+	margin: 0px;
+	font-family: 'Open-Sans', sans-serif;
+	text-align: center;
+}
+
+a,a:visited {
+	color: #FFFFFF;
+	border: 2px #5882FA solid;
+	padding: 15px 50px 15px 50px;
+	background-color: #5882FA;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+
+}
+a:hover {
+	color: inherit !important;
+	text-decoration: none;
+	background-color: #2E2EFE;
+	width:80px;
+    height:19px;
+}
+.no-margin {
+	margin: 0px;
+}
+.no-list {
+	list-style: none;
+}
+
+.fondo {
+	background-color: #5882FA;
+}
+
+
+.blanco {
+	color: #ECF0F1;
+}
+
+.large-padding {
+	padding: 10px 7px;
+}
+
+/* FORMATO DE TABLAS */
+
+.tabla1,.tabla1 td,.tabla1 tr {
+    border-spacing: 0px;
+}
+ 
+.tabla1 {
+    border:1px black solid;
+    border-radius:5px;
+    min-width:400px;
+    font-family: Helvetica,Arial;
+    font-size: 14px;
+    margin: 0 auto;
+
+}
+ 
+.tabla1 td {
+    padding:6px;
+}
+ 
+.tabla1 tr:last-child td:first-child {
+    border-radius:0px 0px 0px 5px;
+}
+ 
+.tabla1 tr:last-child td:last-child {
+    border-radius:0px 0px 5px 0px;
+}
+ 
+.tabla1 td:not(:last-child) {
+    border-right:1px #666 solid;
+}
+ 
+ 
+.tabla1 tr:nth-child(2n) {
+    background: #FFF;
+}
+ 
+.tabla1 tr:nth-child(2n+1){
+    background: #CEE3F6;
+}
+ 
+/*.tabla1 tr.header:not(:first-child):hover, .tabla1:not(.header) tr:hover {
+    background:#E0FFFF;
+}*/
+ 
+.tabla1 :not(.header) tr {
+    text-align: center;
+    margin: auto;
+}
+ 
+.tabla1 th{
+    font-weight: bold;
+    color:#fff;
+    background-color: #5882FA;
+    border-bottom:1px #000 solid;
+	text-align: center;
+    margin: auto;
+}

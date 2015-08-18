@@ -1,0 +1,9 @@
+  [1m[36m (137.6ms)[0m  [1mCREATE TABLE "autos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "marca" varchar, "modelo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (131.9ms)[0m  CREATE TABLE "partes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "nombre" varchar, "cantidad" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (124.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (144.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (341.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150817214731')[0m
+  [1m[35m (169.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150817214156')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m

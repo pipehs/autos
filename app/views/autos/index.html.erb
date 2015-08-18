@@ -1,0 +1,14 @@
+<h1>Autos registrados</h1>
+
+<table class="tabla1">
+	<thead>
+		<th>Marca</th>
+		<th>Modelo</th>
+	</thead>
+	<% @autos.each do |auto| %>  
+	<tr>
+		<td><%= auto.marca %></td>
+		<td><%= auto.modelo %></td>
+	</tr>
+	<%end%>
+</table>
