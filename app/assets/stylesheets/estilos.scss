@@ -7,9 +7,9 @@ html,body {
 a,a:visited {
 	color: #FFFFFF;
 	border: 2px #5882FA solid;
-	padding: 10px 30px 10px 30px;
+	padding: 5px 30px 5px 30px;
 	background-color: #5882FA;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: bold;
 	text-decoration: none;
 	background-repeat: no-repeat;
@@ -21,7 +21,7 @@ a:hover {
 	text-decoration: none;
 	background-color: #2E2EFE;
 	width:80px;
-    height:19px;
+    height:15px;
 }
 .no-margin {
 	margin: 0px;
@@ -56,11 +56,13 @@ a:hover {
     font-family: Helvetica,Arial;
     font-size: 14px;
     margin: 0 auto;
+    width: auto;
+    height: auto;
 
 }
  
 .tabla1 td {
-    padding:6px;
+    padding:16px;
 }
  
 .tabla1 tr:last-child td:first-child {
@@ -106,6 +108,6 @@ a:hover {
     font-size:11px; 
     font-weight:bold; 
     width: repeat-x; 
-    height:20px;
+    height:10px;
     /*box-shadow: 0px 0px 50px 0px #000000; Sombra de botones */
 } 

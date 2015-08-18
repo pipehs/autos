@@ -6,11 +6,17 @@
 	<thead>
 		<th>Marca</th>
 		<th>Modelo</th>
+		<th>Ver</th>
+		<th>Modificar</th>
+		<th>Eliminar</th>
 	</thead>
 	<% @autos.each do |auto| %>  
 	<tr>
 		<td><%= auto.marca %></td>
 		<td><%= auto.modelo %></td>
+		<td><%= link_to "Ver", auto, class: "boton" %></td>
+		<td><%= link_to "Editar", edit_auto_path(auto), class: "boton" %></td>
+		<td><%= link_to "Eliminar", auto, :confirm => "Seguro desea eliminar este auto?", :method => :delete, class: "boton" %></td>
 	</tr>
 	<%end%>
 </table>

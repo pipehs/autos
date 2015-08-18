@@ -1,4 +1,4 @@
-<h2> Agregar nuevo auto </h2>
+<h2> Modificar auto </h2>
 
 <%= form_for (@auto) do |auto| %>
 <% @auto.errors.full_messages.each do |mensaje| %>
@@ -13,6 +13,6 @@
 </div>
 <br>
 <div>
-<%= auto.submit "Agregar" %>
+<%= auto.submit "Modificar" %>
 </div>
 <%end%>

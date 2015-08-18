@@ -15,10 +15,29 @@ class AutosController < ApplicationController
   	@auto = Auto.new(marca: params[:auto][:marca],
   					 modelo: params[:auto][:modelo])
   	if @auto.save
-  		redirect_to @auto
+  		redirect_to root_path, :notice => "El auto ha sido agregado";
   	else
   		render :new
   	end
+  end
+
+  def edit
+  	@auto = Auto.find(params[:id])
+  end
+
+  def update
+  	@auto = Auto.find(params[:id])
+  	@auto.marca = params[:auto][:marca]
+  	@auto.modelo = params[:auto][:modelo]
+
+  	if @auto.save
+  		redirect_to root_path, :notice => "El auto ha sido modificado";
+  	else
+  		render :edit
+  	end
+  end
+
+  def destroy
   end
 
 end
