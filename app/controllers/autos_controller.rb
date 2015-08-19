@@ -42,7 +42,7 @@ class AutosController < ApplicationController
 	if @auto.destroy()
 	    redirect_to root_path, :notice => "El auto ha sido eliminado";
 	else
-	    redirect_to root_path, :notice => "El auto NO ha podido ser eliminada";
+	    redirect_to root_path, :notice => "El auto NO ha podido ser eliminado";
 	end
   end
 

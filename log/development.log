@@ -10394,3 +10394,463 @@ Processing by AutosController#index as HTML
   [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
   Rendered autos/index.html.erb within layouts/application (4.0ms)
 Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 18:44:43 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/autos" for 127.0.0.1 at 2015-08-18 18:44:48 -0400
+Processing by AutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dQ9si9zKf9keONm3Ckn+no/sZ5tWIsNElSwF4nadngNr0JuxvjECugpiIa3i7d01yBNcIHu0prPmRGPiIrYtfA==", "auto"=>{"marca"=>"Audi", "modelo"=>"A3"}, "commit"=>"Agregar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAuto Exists (0.2ms)[0m  SELECT  1 AS one FROM "autos" WHERE "autos"."modelo" = 'A3' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "autos" ("marca", "modelo", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["marca", "Audi"], ["modelo", "A3"], ["created_at", "2015-08-18 22:44:48.060097"], ["updated_at", "2015-08-18 22:44:48.060097"]]
+  [1m[35m (176.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 184ms (ActiveRecord: 177.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 18:44:48 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 18:58:27 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 89ms (Views: 88.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 18:58:30 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/autos" for 127.0.0.1 at 2015-08-18 18:58:36 -0400
+Processing by AutosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t57p0tw/MnfDiQuDNKOLBee6dmq+GeHeDGxVnbJiazapQR7ovsRPFNfT85ncB6iuoEVN0ZOPhCl/BDOd5knYSQ==", "auto"=>{"marca"=>"Audi", "modelo"=>"A5"}, "commit"=>"Agregar"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mAuto Exists (0.3ms)[0m  SELECT  1 AS one FROM "autos" WHERE "autos"."modelo" = 'A5' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "autos" ("marca", "modelo", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["marca", "Audi"], ["modelo", "A5"], ["created_at", "2015-08-18 22:58:36.985666"], ["updated_at", "2015-08-18 22:58:36.985666"]]
+  [1m[35m (178.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 186ms (ActiveRecord: 178.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 18:58:37 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/autos/7" for 127.0.0.1 at 2015-08-18 18:58:39 -0400
+Processing by AutosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EyN/zjeCyNmF0APLgWpTZ7w5m/XBgQx8J/Azh6VyglYN/Ij0VXm1upGK+9FpznDM+8agTuwXaYtUmFWH8VkxKQ==", "id"=>"7"}
+  [1m[35mAuto Load (0.1ms)[0m  SELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "autos" WHERE "autos"."id" = ?  [["id", 7]]
+  [1m[36m (161.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 165ms (ActiveRecord: 162.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 18:58:39 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.4ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 21:40:29 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 21:40:33 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 48ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/partes/index" for 127.0.0.1 at 2015-08-18 21:40:34 -0400
+Processing by PartesController#index as HTML
+  Rendered partes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 21:40:36 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 82ms (Views: 81.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/partes/index" for 127.0.0.1 at 2015-08-18 21:40:38 -0400
+Processing by PartesController#index as HTML
+  Rendered partes/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 21:40:41 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:12:09 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 677ms (Views: 582.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/estilos.self-13bc77d8c21320137202b28f5dc3f089249a5259758598e43ae61cd22688f3a0.css?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 23:12:11 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:12:47 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (90.1ms)
+Completed 200 OK in 178ms (Views: 177.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:12:49 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/estilos.self-13bc77d8c21320137202b28f5dc3f089249a5259758598e43ae61cd22688f3a0.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:26 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:16:27 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.4ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:27 -0400
+
+
+Started GET "/assets/estilos.self-13bc77d8c21320137202b28f5dc3f089249a5259758598e43ae61cd22688f3a0.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:27 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 23:16:28 -0400
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:16:30 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (75.3ms)
+Completed 500 Internal Server Error in 79ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial autos/_form, application/_form with {:locale=>[:en], :formats=>[:html, :xml], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/felipe/Documentos/Nnodes/autos/app/views"
+):
+    1: <h2> Agregar nuevo auto </h2>
+    2: 
+    3: <%= render "form" %>
+  app/views/autos/new.html.erb:3:in `_app_views_autos_new_html_erb__1692495752762785485_70152721986160'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:16:30 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial autos/_form, application/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/felipe/Documentos/Nnodes/autos/app/views"
+):
+    1: <h2> Agregar nuevo auto </h2>
+    2: 
+    3: <%= render "form" %>
+  app/views/autos/new.html.erb:3:in `_app_views_autos_new_html_erb__1692495752762785485_70152859642180'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:16:48 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Missing partial autos/_form.html.erb, application/_form.html.erb with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/felipe/Documentos/Nnodes/autos/app/views"
+):
+    1: <h2> Agregar nuevo auto </h2>
+    2: 
+    3: <%= render "form.html.erb" %>
+  app/views/autos/new.html.erb:3:in `_app_views_autos_new_html_erb__1692495752762785485_70152956666520'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.9ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:17:23 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/_form_add_edit.html.erb (1.7ms)
+  Rendered autos/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/autos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/estilos.self-13bc77d8c21320137202b28f5dc3f089249a5259758598e43ae61cd22688f3a0.css?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/partes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/flexboxgrid.self-029c491acfc903b0be6a78fc85108dd97195f3300e5d318178fb5a53e8eaa662.css?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/autos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/assets/partes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-18 23:17:24 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:17:26 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/1/edit" for 127.0.0.1 at 2015-08-18 23:17:47 -0400
+Processing by AutosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAuto Load (0.3ms)[0m  [1mSELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered autos/_form_add_edit.html.erb (1.5ms)
+  Rendered autos/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 143ms (Views: 36.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:17:48 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:18:13 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 34.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:18:15 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/Nnodes/autos/app/views/autos/new.html.erb:9: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/autos/new.html.erb:9: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.1ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:18:15 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/felipe/Documentos/Nnodes/autos/app/views/autos/new.html.erb:9: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/autos/new.html.erb:9: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:18:22 -0400
+Processing by AutosController#index as HTML
+  [1m[35mAuto Load (0.2ms)[0m  SELECT "autos".* FROM "autos"
+  Rendered autos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/new" for 127.0.0.1 at 2015-08-18 23:18:36 -0400
+Processing by AutosController#new as HTML
+  Rendered autos/_form_add_edit.html.erb (2.0ms)
+  Rendered autos/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 83ms (Views: 81.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:18:38 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/autos/1/edit" for 127.0.0.1 at 2015-08-18 23:18:40 -0400
+Processing by AutosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mAuto Load (0.1ms)[0m  SELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered autos/_form_add_edit.html.erb (2.5ms)
+  Rendered autos/edit.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:18:42 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.5ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/autos/2/edit" for 127.0.0.1 at 2015-08-18 23:27:25 -0400
+Processing by AutosController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAuto Load (0.1ms)[0m  SELECT  "autos".* FROM "autos" WHERE "autos"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered autos/_form_add_edit.html.erb (0.7ms)
+  Rendered autos/edit.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-08-18 23:27:27 -0400
+Processing by AutosController#index as HTML
+  [1m[36mAuto Load (0.2ms)[0m  [1mSELECT "autos".* FROM "autos"[0m
+  Rendered autos/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.2ms)

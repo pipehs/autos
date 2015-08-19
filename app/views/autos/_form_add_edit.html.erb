@@ -1,0 +1,16 @@
+<%= form_for (@auto) do |auto| %>
+<% @auto.errors.full_messages.each do |mensaje| %>
+	* <%= mensaje %>
+	<%end%>
+<div>
+ Marca:	<%= auto.text_field :marca, placeholder: "Escriba la marca", required: "required" %>
+</div>
+<br>
+<div>
+ Modelo: <%= auto.text_field :modelo, placeholder: "Escriba el modelo", required: "required" %>
+</div>
+<br>
+<div>
+<%= auto.submit "Enviar" %>
+</div>
+<%end%>
