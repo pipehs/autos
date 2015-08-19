@@ -1,0 +1,22 @@
+<%= form_for (@parte) do |parte| %>
+<% @parte.errors.full_messages.each do |mensaje| %>
+	* <%= mensaje %>
+	<%end%>
+<div>
+ Nombre:	<%= parte.text_field :nombre, placeholder: "Escriba el nombre", required: "required" %>
+</div>
+<br>
+<div>
+ Cantidad: <%= parte.number_field :cantidad, placeholder: "ingrese la cantidad", required: "required" %>
+</div>
+<br>
+<div>
+ Vehículo: <%= parte.select(:auto_id, Auto.all.collect {|a| [ a.marca+" "+a.modelo, a.id] }) %>
+
+
+</div>
+<br>
+<div>
+<%= parte.submit "Guardar" %>
+</div>
+<%end%>

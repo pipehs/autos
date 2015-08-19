@@ -5,6 +5,7 @@ class AutosController < ApplicationController
 
   def show
   	@auto = Auto.find(params[:id])
+    @partes = Parte.all
   end
 
   def new

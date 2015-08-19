@@ -1,6 +1,20 @@
 Rails.application.routes.draw do
 
   get 'partes/index'
+
+  get 'partes/new'
+
+  get 'partes/create'
+
+  get 'partes/show'
+
+  get 'partes/edit'
+
+  get 'partes/update'
+
+  get 'partes/destroy'
+
+  get 'partes/index'
   get 'autos/index'
   
 

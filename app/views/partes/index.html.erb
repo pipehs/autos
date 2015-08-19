@@ -1,2 +1,25 @@
-<h2>Partes de vehículos</h2>
-<p>Lista</p>
+<h1>Partes de vehículo</h1>
+<%= link_to "Agregar Pieza", "new", class: "boton" %>
+<br><br><br>
+<table class="tabla1">
+	<thead>
+		<th>Nombre</th>
+		<th>Cantidad</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
+		<th>Ver auto</th>
+	</thead>
+	<% @partes.each do |parte| %>  
+	<tr>
+		<td><%= parte.nombre %></td>
+		<td><%= parte.cantidad %></td>
+		<td><%= link_to "Editar", edit_parte_path(parte), class: "boton" %></td>
+		<td><%= link_to "Eliminar", parte, :confirm => "Seguro desea eliminar este auto?", :method => :delete, class: "boton" %></td>
+		<% auto = @autos.where(:id => parte.auto_id) %>
+		<td><% auto.each do |a| %> 
+				<%=	link_to a.marca+" "+a.modelo, a, class: "boton" %>
+				<% end %>
+		</td>
+	</tr>
+	<%end%>
+</table>
